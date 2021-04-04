@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/txt_namamahasiswa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Mahasiswa"/>
+
+            <TextView
+                 android:id="@+id/txt_nimmahasiswa"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="NIM"/>
+
+            <TextView
+                android:id="@+id/txt_nohpmahasiswa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomer HP Mahasiswa"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

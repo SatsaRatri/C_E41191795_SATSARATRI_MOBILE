@@ -35,7 +35,7 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
     }
-
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //inflate the menu; this adds item to the action bar if it is present.
