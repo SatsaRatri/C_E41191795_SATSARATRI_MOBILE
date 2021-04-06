@@ -15,11 +15,6 @@
         android:padding="5dp">
 
 
-
-
-
-
-
             <TextView
                 android:id="@+id/txt_namamahasiswa"
                 android:layout_width="match_parent"

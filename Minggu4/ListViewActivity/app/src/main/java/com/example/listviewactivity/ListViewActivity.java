@@ -29,11 +29,11 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = (ListView) findViewById(R.id.listView);
-        adapter = ArrayAdapter.createFromResource(this, R.array.countries_arry, android.R.layout.simple_list_item_1);
-        //adapter = new ArrayAdapter<string>(this, android.R.layout.simple_list_item_1);
+        listView = (ListView)findViewById(R.id.listView);
+        adapter = ArrayAdapter.createFromResource(this,R.array.countries_array,android.R.layout.simple_list_item_1);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
+
     }
     
     @Override
