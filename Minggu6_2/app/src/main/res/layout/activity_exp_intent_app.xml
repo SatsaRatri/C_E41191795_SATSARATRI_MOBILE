@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.minggu6_2.ExpIntentApp">
-    
+
     <TextView
         android:id="@id/textView"
         android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/edt_nama"
+        android:id="@+id/editnama"
         android:layout_alignBaseline="@+id/textView2"
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignParentEnd="true"
@@ -33,7 +33,7 @@
         android:text="SEND"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_nama"
+        android:layout_below="@+id/editnama"
         android:layout_marginTop="26dp"
         android:id="@+id/btn_send"
         android:layout_alignParentEnd="true"

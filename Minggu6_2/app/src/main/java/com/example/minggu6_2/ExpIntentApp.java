@@ -19,7 +19,7 @@ public class ExpIntentApp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exp_intent_app);
-        EditText name = (EditText) findViewById(R.id.edt_nama);
+        EditText name = (EditText) findViewById(R.id.editnama);
         Button btnSend = (Button) findViewById(R.id.btn_send);
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
