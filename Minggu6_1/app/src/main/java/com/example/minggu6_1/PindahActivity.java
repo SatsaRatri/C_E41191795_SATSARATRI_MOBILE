@@ -1,4 +1,4 @@
-package com.example.minggu6;
+package com.example.minggu6_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 

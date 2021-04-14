@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.minggu6">
+    package="com.example.minggu6_1">
 
     <application
         android:allowBackup="true"
@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Minggu6">
-        <activity android:name=".ForResultActivity"></activity>
+        android:theme="@style/Theme.Minggu6_1">
+        <activity android:name=".User_detail"></activity>
+        <activity android:name=".PindahDenganObjek" />
+        <activity android:name=".PindahDenganData" />
+        <activity android:name=".PindahForResult" />
         <activity android:name=".PindahActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

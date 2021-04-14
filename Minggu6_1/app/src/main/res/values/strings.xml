@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Minggu6</string>
-    <string name="_1">1</string>
+    <string name="app_name">Minggu6_1</string>
+    <string name="move_activity">Pindah Activty</string>
+    <string name="this_is_moveactivity">Ini Aktivitas Pindah</string>
 </resources>

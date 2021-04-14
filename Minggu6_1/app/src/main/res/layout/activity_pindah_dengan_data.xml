@@ -4,16 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PindahActivity"
-    android:padding="16dp"
-    android:background="@color/black">
+    tools:context=".PindahDenganData">
 
     <TextView
+        android:id="@+id/tvdataintent"
+        android:text="ini activity yang berisi data"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/this_is_moveactivity"
-        android:textAlignment="center"
-        android:textColor="@color/white"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
