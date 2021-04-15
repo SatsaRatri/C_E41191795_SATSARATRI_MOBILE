@@ -26,13 +26,6 @@
         android:text="Pindah Activity Dengan Data" />
 
     <Button
-        android:id="@+id/btn_pindah_activity_objek"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Pindah Activity Dengan Objek" />
-
-    <Button
         android:id="@+id/btn_dial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,13 +52,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Intent Kirim SMS" />
-
-    <Button
-        android:id="@+id/btn_contact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Ambil Kontak Phone" />
 
     <Button
         android:id="@+id/btn_activity_result"

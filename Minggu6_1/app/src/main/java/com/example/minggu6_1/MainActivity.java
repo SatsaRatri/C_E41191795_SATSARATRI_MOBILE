@@ -12,14 +12,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.minggu6_1.PindahActivity;
-import com.example.minggu6_1.PindahDenganData;
-import com.example.minggu6_1.PindahDenganObjek;
-import com.example.minggu6_1.R;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnPindahActivity, btnPindahData, btnPindahObject, btnDial, btnMaps, btnShareText, btnSms, btnContact, btnResult;
+    private Button btnPindahActivity, btnPindahData, btnDial, btnMaps, btnShareText, btnSms,  btnResult;
     private static final int REQUEST_CODE = 75;
     private static final int PICK_CONTACT_REQUEST = 1;
     private TextView textViewResult;
@@ -35,8 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPindahData = findViewById(R.id.btn_pindah_activity_data);
         btnPindahData.setOnClickListener(this);
 
-        btnPindahObject = findViewById(R.id.btn_pindah_activity_objek);
-        btnPindahObject.setOnClickListener(this);
 
         btnDial = findViewById(R.id.btn_dial);
         btnDial.setOnClickListener(this);
@@ -49,9 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnSms = findViewById(R.id.btn_sms);
         btnSms.setOnClickListener(this);
-
-        btnContact = findViewById(R.id.btn_contact);
-        btnContact.setOnClickListener(this);
 
         btnResult = findViewById(R.id.btn_activity_result);
         btnResult.setOnClickListener(this);
@@ -70,45 +60,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_pindah_activity_data:
                 Intent moveWithDataIntent = new Intent(this, PindahDenganData.class);
-                moveWithDataIntent.putExtra("extra_name", "Muhammad Rahadian Nugraha");
-                moveWithDataIntent.putExtra("NIM", "E41191450");
+                moveWithDataIntent.putExtra("extra_name", "Satsa Ratri Hastutik");
+                moveWithDataIntent.putExtra("NIM", "E41191795");
                 startActivity(moveWithDataIntent);
                 break;
-            case R.id.btn_pindah_activity_objek:
-                Intent intentPindahActivityObject = new Intent(this, PindahDenganObjek.class);
-                startActivity(intentPindahActivityObject);
-                break;
+
             case R.id.btn_dial:
-                String phoneNumber = "083835742425";
+                String phoneNumber = "081339011430";
                 Intent dialphone = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+phoneNumber));
                 startActivity(dialphone);
                 break;
             case R.id.btn_maps:
-                Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/dir//State+Polytechnic+of+Jember,+Jl.+Mastrip+No.164,+Krajan+Timur,+Sumbersari,+Jember+Regency,+East+Java+68121/@-8.1781017,113.6986263,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd695b617d8f623:0xf6c4437632474338!2m2!1d113.7224597!2d-8.1594771");
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(mapIntent);
-                }
+                Intent intentmaps = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:-8.2755701,113.6407981"));
+                intentmaps.setPackage("com.google.android.apps.maps");
+                startActivity(intentmaps);
                 break;
             case R.id.btn_share_text:
                 Intent share = new Intent(Intent.ACTION_SEND);
-                share.putExtra(Intent.EXTRA_TEXT, "Mari Belajar Android ");
+                share.putExtra(Intent.EXTRA_TEXT, "Mari Belajar Implicit dan Explicit ");
                 share.setType("text/plain");
                 startActivity(Intent.createChooser(share, "share link"));
                 break;
             case R.id.btn_sms:
-                Intent sms = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto: 083835742425"));
-                sms.putExtra("sms_body", "sAMleKom");
+                Intent sms = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto: 081339011430"));
+                sms.putExtra("sms_body", "Mari Belajar Implicit dan Explicit ");
                 startActivity(sms);
                 break;
-            case R.id.btn_contact:
-                Intent pickContact = new Intent(Intent.ACTION_PICK, Uri.parse("content://contacts"));
-                pickContact.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
-                startActivityForResult(pickContact, PICK_CONTACT_REQUEST);
-                break;
+
             case R.id.btn_activity_result:
-                Intent moveForResultIntent = new Intent(this, com.example.intent.PindahForResult.class);
+                Intent moveForResultIntent = new Intent(this, com.example.minggu6_1.PindahForResult.class);
                 startActivityForResult(moveForResultIntent, REQUEST_CODE);
                 break;
 
@@ -132,8 +112,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         if (requestCode == REQUEST_CODE){
-            if (resultCode == com.example.intent.PindahForResult.RESULT_CODE){
-                int selectedValue = data.getIntExtra(com.example.intent.PindahForResult.EXTRA_VALUE, 0);
+            if (resultCode == com.example.minggu6_1.PindahForResult.RESULT_CODE){
+                int selectedValue = data.getIntExtra(com.example.minggu6_1.PindahForResult.EXTRA_VALUE, 0);
                 textViewResult.setText("Hasil: "+selectedValue);
             }
         }

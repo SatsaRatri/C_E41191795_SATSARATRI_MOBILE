@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Minggu6_1">
-        <activity android:name=".User_detail"></activity>
-        <activity android:name=".PindahDenganObjek" />
         <activity android:name=".PindahDenganData" />
         <activity android:name=".PindahForResult" />
         <activity android:name=".PindahActivity" />

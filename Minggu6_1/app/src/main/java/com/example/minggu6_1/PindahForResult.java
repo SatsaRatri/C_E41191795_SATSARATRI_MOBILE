@@ -1,4 +1,4 @@
-package com.example.intent;
+package com.example.minggu6_1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,21 +27,22 @@ public class PindahForResult extends AppCompatActivity implements View.OnClickLi
         buttonSubmit.setOnClickListener(this);
     }
 
-    @Override
-    public void onClick(View v) {
-        if (radioGroupAngka.getCheckedRadioButtonId() != 0){
+   @Override
+    public void onClick (View view){
+        if (radioGroupAngka.getCheckedRadioButtonId()!=0){
             int value = 0;
             switch (radioGroupAngka.getCheckedRadioButtonId()){
-                case R.id.radioButton100:
+                case R.id.radioButton1:
                     value = 1999;
                     break;
-                case R.id.radioButton50:
+                case R.id.radioButton2:
                     value = 2000;
                     break;
-                case R.id.radioButton32:
+                case R.id.radioButton3:
                     value = 2001;
                     break;
             }
+
             Intent resultIntent = new Intent();
             resultIntent.putExtra(EXTRA_VALUE, value);
             setResult(RESULT_CODE, resultIntent);

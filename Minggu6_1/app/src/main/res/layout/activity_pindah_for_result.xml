@@ -19,18 +19,18 @@
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:id="@+id/radioButton100"
-            android:text="14"
+            android:id="@+id/radioButton1"
+            android:text="1999"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <RadioButton
-            android:id="@+id/radioButton50"
-            android:text="03"
+            android:id="@+id/radioButton2"
+            android:text="2000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <RadioButton
-            android:id="@+id/radioButton32"
-            android:text="2018"
+            android:id="@+id/radioButton3"
+            android:text="2001"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RadioGroup>
