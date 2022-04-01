@@ -257,7 +257,7 @@
                 android:layout_height="80dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg1"
-                android:text="@string/_5"
+                android:text="@string/_8"
                 android:textSize="40sp"
                 android:layout_gravity="center"/>
 
